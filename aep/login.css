@@ -1,0 +1,37 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.login{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+input{
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 5px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}

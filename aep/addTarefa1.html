@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="addTarefa.css">
+</head>
+<body>
+    <header>
+        <h1>TaskEZ.com</h1>
+        <button id="logoutButton">Logout</button> </header>
+    <div class="listaTarefas-container"> 
+        <h2>Adicionar Tarefa</h2>
+        <form id="formDeTarefa">
+            <label for="nomeTarefa">Nome da Tarefa:</label> 
+            <input type="text" id="nomeTarefa" name="nomeTarefa" required>
+
+            <label for="prazoTarefa">Prazo da Tarefa:</label> 
+            <input type="datetime-local" id="prazoTarefa" name="prazoTarefa" required> 
+
+            <label for="descricaoTarefa">Descrição da Tarefa:</label> 
+            <textarea id="descricaoTarefa" name="descricaoTarefa" required></textarea>
+
+            <button type="submit">Adicionar</button>
+        </form>
+
+        <h2>Tarefas a fazer</h2>
+        <ul id="listaDeTarefas">
+        </ul> 
+
+        <div id="tarefasConcluidas">
+            <h2>Tarefas Concluídas</h2>
+            <ul id="listaDeTarefasConcluidas">
+            </ul>
+        </div>
+    </div>
+
+    <script src="addTarefa.js"></script>
+</body>
+</html>
